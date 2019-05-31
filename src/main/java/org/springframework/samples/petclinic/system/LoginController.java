@@ -94,7 +94,7 @@ public class LoginController {
             reporteLogin.setUsername(userName);
             reporteLogin.setDescripcion("Inicio de sesión Exitoso");
             this.repositoryReporteLogin.save(reporteLogin);
-            System.out.println ( " Yeah.. " + userName );
+            //System.out.println ( " Yeah.. " + userName );
         };
     }
 
@@ -112,7 +112,7 @@ public class LoginController {
             reporteLogin.setUsername((String) userName);
             reporteLogin.setDescripcion("Inicio de sesión Fallido");
             this.repositoryReporteLogin.save(reporteLogin);
-            System.out.println ( " Oh no ... " + userName );
+            //System.out.println ( " Oh no ... " + userName );
         };
     }
     
@@ -130,7 +130,7 @@ public class LoginController {
             reporteLogin.setUsername(userName);
             reporteLogin.setDescripcion("Inicio de sesión Fallido");
             this.repositoryReporteLogin.save(reporteLogin);
-            System.out.println ( " Disabled " + userName );
+            //System.out.println ( " Disabled " + userName );
         };
     }
     

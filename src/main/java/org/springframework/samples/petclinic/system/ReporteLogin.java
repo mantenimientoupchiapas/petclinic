@@ -20,7 +20,7 @@ import java.util.Date;
 
 /**
  *
- * @author Daniel Sarmiento
+ * @author Jose Gerardo
  */
 @Entity
 @Table(name = "reporteslogin")

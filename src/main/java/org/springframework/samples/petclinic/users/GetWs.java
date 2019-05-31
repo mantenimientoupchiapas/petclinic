@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author marqu
+ * @author Eliezer
  */
 public class GetWs {
     WebService ws = new WebService();

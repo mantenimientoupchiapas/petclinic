@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author Daniel Sarmiento
+ * @author Jose Gerardo
  */
 @XmlRootElement
 public class ReportesLogin {

@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 
 /**
  *
- * @author Daniel Sarmiento
+ * @author Jose Gerardo
  */
 //@Component
 public class MyApplicationListener implements ApplicationListener{

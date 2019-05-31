@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
- * @author Daniel Sarmiento
+ * @author Jose Gerardo
  */
 public interface ReporteLoginRepository extends Repository<ReporteLogin, Integer>{
     

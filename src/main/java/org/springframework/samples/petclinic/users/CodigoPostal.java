@@ -7,7 +7,7 @@ package org.springframework.samples.petclinic.users;
 
 /**
  *
- * @author marqu
+ * @author Eliezer
  */
 public class CodigoPostal {
     String codigo_postal;

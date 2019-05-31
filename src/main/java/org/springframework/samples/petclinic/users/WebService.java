@@ -13,7 +13,7 @@ import java.nio.charset.Charset;
 
 /**
  *
- * @author marqu
+ * @author Eliezer
  */
 public class WebService {
     public String ws (String cp){

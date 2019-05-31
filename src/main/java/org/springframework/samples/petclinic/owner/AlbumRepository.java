@@ -10,7 +10,7 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.data.repository.Repository;
 /**
  *
- * @author ciaba
+ * @author Jonatan
  */
 public interface AlbumRepository extends Repository<Album, Integer>{
     void save(Album album) throws DataAccessException;

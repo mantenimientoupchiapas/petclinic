@@ -60,7 +60,6 @@ for (int i = 0; i < entero.length(); i++) {
 			      }
 			
 		}
-        System.out.println("El char a comparar: " + resultado);
         if(!resultado.equals(user.getMunicipio())){
             result.rejectValue("cp", "novalid");
             return VIEWS_USERS_CREATE_OR_UPDATE_FORM;
@@ -138,7 +137,6 @@ for (int i = 0; i < entero.length(); i++) {
 			      }
 			
 		}
-        System.out.println("El char a comparar: " + resultado);
         if(!resultado.equals(user.getMunicipio())){
             result.rejectValue("cp", "novalid");
             return VIEWS_USERS_CREATE_OR_UPDATE_FORM;
