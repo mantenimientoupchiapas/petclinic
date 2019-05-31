@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'products')}">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>CREAR PRODUCTO</h1>
+        <form action="/products/create" method="POST">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Nombre</label>
+    <input name="nombre" type="text" class="form-control" placeholder="Nombre del producto">
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Descripcion</label>
+    <textarea name="descripcion" type="text" class="form-control"  placeholder="Descripción del producto"></textarea>
+   
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Precio</label>
+    <input name="precio" type="number" class="form-control"  placeholder="Precio del producto">
+    
+  </div>
+   <div class="form-group">
+    <label for="exampleInputEmail1">Existencia</label>
+    <input name="existencia" type="number" class="form-control"  placeholder="Existencia del producto">
+    
+  </div>
+   <div class="form-group">
+    <label for="exampleInputEmail1">Fotografía</label>
+    <input name="fotografia" type="text" class="form-control"  placeholder="Fotografia del producto">
+   
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Agregar Producto</button>
+</form>
+    </body>
+ 
+</html>

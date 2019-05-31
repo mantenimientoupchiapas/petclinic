@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'products/report')}">
+
+  <body>
+
+    <h2>Productos</h2>
+
+    <table id="vets" class="table table-striped">
+        <thead>
+        <tr>
+        <th class="text-center">Nombre</th>
+        <th class="text-center">Descripción</th>
+        <th class="text-center">Precio</th>
+        <th class="text-center">Existencia</th>
+        <th class="text-center">Fotografía</th>
+        
+      </tr>
+        </thead>
+        <tbody>
+      
+      <tr th:each="product : ${products}">
+              
+              <td class="text-center" th:text="${product.nombre}"/>
+              <td class="text-center" th:text="${product.descripcion}"/>
+              <td class="text-center" th:text="${product.precio}"/>
+              <td class="text-center" th:text="${product.existencia}"/>
+              <td class="text-center" th:text="${product.fotografia}"/>
+              
+              
+          </tr>
+      
+    </tbody>
+    </table>
+
+  </body>
+</html>

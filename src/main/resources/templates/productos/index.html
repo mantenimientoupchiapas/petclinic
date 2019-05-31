@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'products')}">
+
+  <body>
+
+    <h2>Productos </h2>
+    
+    <a type="button" href="/products/create" class="btn btn-default"/>Crear producto</a>
+               
+             
+   
+   
+    
+              
+
+    <table id="vets" class="table table-striped">
+        <thead>
+        <tr>
+        <th class="text-center">Nombre</th>
+        <th class="text-center">Descripción</th>
+        <th class="text-center">Precio</th>
+        <th class="text-center">Existencia</th>
+        <th class="text-center">Fotografía</th>
+        <th class="text-center">Acciones</th>
+        
+      </tr>
+        </thead>
+        <tbody>
+      
+      <tr th:each="product : ${products}">
+              
+              <td class="text-center" th:text="${product.nombre}"/>
+              <td class="text-center" th:text="${product.descripcion}"/>
+              <td class="text-center" th:text="${product.precio}"/>
+              <td class="text-center" th:text="${product.existencia}"/>
+              <td class="text-center" th:text="${product.fotografia}"/>
+              <td class="text-center" >
+                <a type="button" th:href="@{/products/__${product.id}__/edit}" class="btn btn-default"/>Editar</a>
+                    <input type="hidden" value="1" name="status">
+                    <form th:action="@{/products/__${product.id}__/delete}" method="post" style="display: inline-block;">
+                        <button class="btn btn-default">Eliminar</button>
+                    </form>
+              </td>
+              
+          </tr>
+      
+    </tbody>
+    
+          
+       
+    </body>
+</html>
